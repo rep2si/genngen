@@ -1,0 +1,5 @@
+type,name,label::English (en),label::Nepali (ne),hint::English (en),hint::Nepali (ne),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
+begin_repeat,namegen1,,,,,,field-list,,,,,,,
+text,alters1,,,,,,,,,,,,,
+select_multiple non_answer,no_alters1,In case of no answer,In case of no answer,Use in case of non-answer,Use in case of non-answer,,,,,,,,,
+end_repeat,,,,,,,,,,,,,,

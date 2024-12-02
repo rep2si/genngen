@@ -1,0 +1,12 @@
+type,name,label::English (en),label::Nepali (ne),hint::English (en),hint::Nepali (ne),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
+begin_group,select_decision_makers1,Who makes the decisions in your household for the following:,तपाईंको घरमा यी कुराहरुको निर्णय कसले गर्छ?,,,,field-list,,,,,,,
+note,decision_makers_note1,Who makes the decisions in your household for the following:,तपाईंको घरमा यी कुराहरुको निर्णय कसले गर्छ?,,,,,,,,,,,
+select_multiple decision_makers,decision_makers1,What to cook on a daily basis,दैनिक के पकाउने?,,,,,,,,,,,
+text,other1,Specify,Specify,,,,,,"selected(${decision_makers1}, 'other')",,,,,
+end_group,,,,,,,,,,,,,,
+calculate,decision_makers_n1,,,,,,,,,count-selected(${decision_makers1}),,,,
+begin_repeat,decision_makers_details1,Specify ID,Specify ID,,,,field-list,,${decision_makers_n1} > 0,,,${decision_makers_n1},,
+calculate,this_decision_maker1,,,,,,,,,"jr:choice-name(selected-at(${decision_makers1}, position(..)-1), '${decision_makers1}')",,,,
+select_one_from_file individual.csv,this_decision_maker_id_1,Search for ${this_decision_maker1}’s ID,Search for ${this_decision_maker1}’s ID,,,,autocomplete minimal,,"selected-at(${decision_makers1}, position(..)-1) != ‘notapplicable’",,,,,
+end_repeat,,,,,,,,,,,,,,
+select_one decision_makers,most_say1,Who has the most say in the decision?,Who has the most say in the decision?,Please select one option.,Please select one option.,,,,${decision_makers_n1} > 1,,,,"selected(${decision_makers1}, name)",

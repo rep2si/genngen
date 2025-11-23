@@ -1,4 +1,4 @@
-type,name,label::English (en),label::Nepali (ne),hint::English (en),hint::Nepali (ne),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
+type,name,label::English (en),label::Tok Pidgin (tp),hint::English (en),hint::Tok Pidgin (tp),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
 begin_repeat,namegen_details2,,,,,,field-list,,"indexed-repeat(${alters2}, ${namegen2}, position(..)) != ‘’",,,count(${alters2}),,
 calculate,name_alters2,,,,,,,,,"indexed-repeat(${alters2}, ${namegen2}, position(..))",,,,
 select_one yesno,namedbefore2,Has ${name_alters2} already been identified?,Has ${name_alters2} already been identified?,,,,,,,,,,,

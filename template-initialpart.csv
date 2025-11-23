@@ -1,4 +1,4 @@
-type,name,label::English (en),label::Nepali (ne),hint::English (en),hint::Nepali (ne),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
+type,name,label::English (en),label::Tok Pidgin (tp),hint::English (en),hint::Tok Pidgin (tp),required,appearance,constraint,relevant,calculation,default,repeat_count,choice_filter,parameters
 start,start,,,,,,,,,,,,,
 end,end,,,,,,,,,,,,,
 deviceid,deviceid,,,,,,,,,,,,,

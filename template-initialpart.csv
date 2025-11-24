@@ -4,7 +4,7 @@ end,end,,,,,,,,,,,,,
 deviceid,deviceid,,,,,,,,,,,,,
 begin_group,initial_info,Initial Information,Initial Information,,,,field-list,,,,,,,
 select_one interviewer,interviewer,Interviewer,Interviewer,Select your name from the list below.,Select your name from the list below.,,,,,,,,,
-select_one yesno,ivan_present,Is Ivan also present?,Is Ivan also present?,,,,,,,,,,,
+select_one yesno,gianluca_present,Is Gianluca also present?,Is Ivan also present?,,,,,,,,,,,
 select_one_from_file individual.csv,participant_id,Participant ID,Participant ID,Enter the ID for the person you are interviewing. (NPXXXXX),Enter the ID for the person you are interviewing. (NPXXXXX),,autocomplete minimal,,,,,,,
 text,participant_name,Participant Name (if no ID),Participant Name (if no ID),Enter the ID for the person you are interviewing. (NPXXXXX),Enter the ID for the person you are interviewing. (NPXXXXX),,,,,,,,,
 image,consent_form,Informed Consent – CLEAR photograph,Informed Consent – CLEAR photograph,"Read out the information sheet. Ensure participant has understood. Prompt for questions and answer.

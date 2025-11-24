@@ -1,0 +1,4 @@
+name,IndivID,firstname,lastname,age,gender,location,occupation,fathersname,mothersname,spousename
+id001,id001,Neil,Armstrong,39,male,the moon,moonwalker,Stephen,Viola,Janet
+id002,id002,Michael,Collins,39,male,the moon,astronaut,James,Virginia,Patricia
+id003,id003,Buzz,Aldrin,39,male,the moon,pilot,Edwin,Marion,Anca
